@@ -14,7 +14,7 @@ function App() {
             <Route
               path="/"
               element={
-                <Home greeting="know all about web technologies, study methods and more..." />
+                <Home greeting="know all about web technologies, study methods and more, let" />
               }
             ></Route>
 
