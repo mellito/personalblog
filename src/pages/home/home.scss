@@ -1,0 +1,67 @@
+.home-main {
+  height: 80vh;
+  background-color: black;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  .welcome-info {
+    min-width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    .Character {
+      width: calc(32px * var(--pixel-size));
+      height: calc(32px * var(--pixel-size));
+      overflow: hidden;
+      position: relative;
+      top: -10%;
+
+      .Character_spritesheet {
+        animation: moveSpritesheet 1s steps(4) infinite;
+        width: calc(128px * var(--pixel-size));
+      }
+      .pixelart {
+        image-rendering: pixelated;
+      }
+      @keyframes moveSpritesheet {
+        from {
+          transform: translate3d(0px, 0, 0);
+        }
+        to {
+          transform: translate3d(-100%, 0, 0);
+        }
+      }
+    }
+
+    .welcome-info__title {
+      color: white;
+      text-transform: uppercase;
+      padding-inline: 10px;
+
+      span {
+        opacity: 0;
+        transition: all 1 ease;
+      }
+
+      .fade {
+        opacity: 1;
+      }
+
+      i {
+        display: inline-block;
+        width: 10px;
+      }
+    }
+    a {
+      color: white;
+      padding: 10px;
+      border: 1px solid gray;
+      font-weight: bold;
+    }
+  }
+}

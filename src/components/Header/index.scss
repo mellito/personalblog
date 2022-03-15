@@ -1,0 +1,40 @@
+header {
+  height: 20vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  .header-icons-container {
+    display: grid;
+    background-color: rgb(50, 154, 252);
+    justify-content: end;
+
+    .icons {
+      display: flex;
+      width: 150px;
+      justify-content: space-evenly;
+      align-self: center;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .profile-link {
+    text-decoration: underline;
+  }
+}
