@@ -1,20 +1,23 @@
-import React, { useEffect, Fragment } from "react";
-import "./home.scss";
+import React, { useEffect, Fragment } from 'react';
+import './home.scss';
 
-const Home = ({ greeting }) => {
-  const splitGretting = greeting.split("");
+// eslint-disable-next-line react/prop-types
+function Home({ greeting }) {
+  // eslint-disable-next-line react/prop-types
+  const splitGretting = greeting.split('');
 
   const showLetter = (array) => {
+    // eslint-disable-next-line no-plusplus
     for (let index = 0; index < array.length; index++) {
       const element = array[index];
       setTimeout(() => {
-        element.classList.add("fade");
+        element.classList.add('fade');
       }, index * 50);
     }
   };
 
   useEffect(() => {
-    const span = document.getElementsByTagName("span");
+    const span = document.getElementsByTagName('span');
     showLetter(span);
   }, []);
 
@@ -29,20 +32,19 @@ const Home = ({ greeting }) => {
           />
         </div>
         <div className="welcome-info__title">
-          {splitGretting.map((value, index) => {
-            return (
-              <Fragment key={index}>
-                {value === " " && <i>{value}</i>}
-                <span>{value}</span>
-              </Fragment>
-            );
-          })}
+          {splitGretting.map((value, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <Fragment key={index}>
+              {value === ' ' && <i>{value}</i>}
+              <span>{value}</span>
+            </Fragment>
+          ))}
         </div>
 
         <a href="./blogs.html">START</a>
       </section>
     </main>
   );
-};
+}
 
 export default Home;
