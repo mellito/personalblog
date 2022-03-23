@@ -1,0 +1,26 @@
+[
+    {   "id":0,
+        "title":"rare new",
+        "image": "./img/1078280-tech.webp",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
+        "lastpost":true
+    },
+       {   "id":1,
+        "title":"post title",
+        "image": "./img/6-PASOS-CREAR-HABITOS.png",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
+        "lastpost":false
+    },
+       {   "id":2,
+        "title":"post title",
+        "image": "./img/goodofwar.jpg",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
+        "lastpost":false
+    },
+        {   "id":3,
+        "title":"post title",
+        "image": "./img/goodofwar.jpg",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
+        "lastpost":false
+    }
+]

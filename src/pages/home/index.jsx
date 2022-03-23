@@ -1,14 +1,14 @@
 import React, { useEffect, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import './home.scss';
+import PropTypes from 'prop-types';
+import { BLOGS_ROUTE } from '../../components/Constans/Routes';
 
-// eslint-disable-next-line react/prop-types
 function Home({ greeting }) {
-  // eslint-disable-next-line react/prop-types
   const splitGretting = greeting.split('');
 
   const showLetter = (array) => {
-    // eslint-disable-next-line no-plusplus
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < array.length; index += 1) {
       const element = array[index];
       setTimeout(() => {
         element.classList.add('fade');
@@ -40,11 +40,13 @@ function Home({ greeting }) {
             </Fragment>
           ))}
         </div>
-
-        <a href="./blogs.html">START</a>
+        <Link to={BLOGS_ROUTE}>START</Link>
       </section>
     </main>
   );
 }
+Home.propTypes = {
+  greeting: PropTypes.string.isRequired,
+};
 
 export default Home;
