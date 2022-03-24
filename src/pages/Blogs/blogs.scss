@@ -1,0 +1,46 @@
+@import url("http://fonts.cdnfonts.com/css/common-pixel");
+@import url("http://fonts.cdnfonts.com/css/borgen");
+@import "../../../node_modules/pixel-borders/src/styles/pixel-borders.scss";
+:root {
+  --pixel-size: 5;
+  --ff--kosalsay: "Borgen", sans-serif;
+}
+
+.kosalsay {
+  font-family: var(--ff--kosalsay);
+  letter-spacing: 1px;
+}
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  background-color: #e6e9ed;
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  gap: 40px;
+}
+
+.blogs-news-img-container img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+.blogs-news-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.blogs-news-info-container h2 {
+  text-transform: uppercase;
+}
+
+.blogs-main a {
+  padding: 10px;
+}
