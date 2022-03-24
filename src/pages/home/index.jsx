@@ -1,23 +1,23 @@
-import React, { useEffect, Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import './home.scss';
-import PropTypes from 'prop-types';
-import { BLOGS_ROUTE } from '../../components/Constans/Routes';
+import React, { useEffect, Fragment } from "react";
+import { Link } from "react-router-dom";
+import "./home.scss";
+import PropTypes from "prop-types";
+import { BLOGS_ROUTE } from "../../components/Constans/Routes";
 
 function Home({ greeting }) {
-  const splitGretting = greeting.split('');
+  const splitGretting = greeting.split("");
 
   const showLetter = (array) => {
     for (let index = 0; index < array.length; index += 1) {
       const element = array[index];
       setTimeout(() => {
-        element.classList.add('fade');
+        element.classList.add("fade");
       }, index * 50);
     }
   };
 
   useEffect(() => {
-    const span = document.getElementsByTagName('span');
+    const span = document.getElementsByTagName("span");
     showLetter(span);
   }, []);
 
@@ -33,9 +33,8 @@ function Home({ greeting }) {
         </div>
         <div className="welcome-info__title">
           {splitGretting.map((value, index) => (
-            // eslint-disable-next-line react/no-array-index-key
             <Fragment key={index}>
-              {value === ' ' && <i>{value}</i>}
+              {value === " " && <i>{value}</i>}
               <span>{value}</span>
             </Fragment>
           ))}
