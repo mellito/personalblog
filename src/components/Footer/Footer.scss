@@ -1,0 +1,16 @@
+footer {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 100px;
+  .footer-top {
+    background-color: rgb(50, 154, 252);
+  }
+  .footer-bottom {
+    display: grid;
+    place-content: center;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding-inline: 10px;
+  }
+}

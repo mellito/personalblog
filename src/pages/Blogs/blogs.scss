@@ -20,12 +20,18 @@
   padding: 20px 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: auto;
-  gap: 40px;
+  height: 450px;
+  gap: 20px;
+}
+
+.blogs-news-img-container {
+  place-self: center;
+  max-height: 500px;
+  max-width: 500px;
 }
 
 .blogs-news-img-container img {
-  object-fit: fill;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -43,4 +49,20 @@
 
 .blogs-main a {
   padding: 10px;
+  text-transform: capitalize;
+}
+
+.blogs-post-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
 }

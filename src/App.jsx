@@ -19,10 +19,6 @@ function App() {
           }
         />
         <Route path={BLOGS_ROUTE} element={<Blogs />} />
-        {/*
-          <Route path="/about" element={<AboutPage />}></Route>
-          <Route path="/pricing" element={<PricingPage />}></Route>
-          <Route path="/character/:id" element={<Card data={data} />}></Route> */}
       </Routes>
     </BrowserRouter>
   );
