@@ -26,12 +26,17 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-  }
-
-  a {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+    .nav-logo-container a {
+      margin-left: 10px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    a:hover {
+      color: rgb(50, 154, 252);
+    }
   }
 
   .profile-link {

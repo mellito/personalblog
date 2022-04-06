@@ -1,8 +1,17 @@
+@import url("http://fonts.cdnfonts.com/css/borgen");
 @import url("http://fonts.cdnfonts.com/css/common-pixel");
-
+@import "../node_modules//pixel-borders/";
+  
 :root {
   --pixel-size: 5;
+  --ff--kosalsay: "Borgen", sans-serif;
 }
+
+.kosalsay {
+  font-family: var(--ff--kosalsay);
+  letter-spacing: 1px;
+}
+
 * {
   margin: 0;
   padding: 0;

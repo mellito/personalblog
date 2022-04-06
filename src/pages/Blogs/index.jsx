@@ -14,9 +14,10 @@ function Blogs() {
   const [idQuote, setIdQuote] = useState(null);
 
   useEffect(() => {
-    setTimeout(() => {
+    const interval=setTimeout(() => {
       setIdQuote(randomQuote);
     }, 10000);
+    return () => clearInterval(interval);
   });
 
   const lastPost = BlogsData.find((blog) => !!blog.lastpost);
@@ -30,9 +31,9 @@ function Blogs() {
           </figure>
           <div className="blogs-news-info-container">
             <h2 className="">{lastPost.title}</h2>
-            <p className="kosalsay">{lastPost.content}</p>
+            <p className="kosalsay">{lastPost.description}</p>
             <Link to="/" className=" pixel-box--primary  kosalsay">
-              Read more
+              Leer Mas
             </Link>
           </div>
         </section>
@@ -48,7 +49,7 @@ function Blogs() {
           </div>
         </section>
       </main>
-      {<Footer quote={quoteData[idQuote]} />}
+      <Footer quote={quoteData[idQuote]} />
     </>
   );
 }

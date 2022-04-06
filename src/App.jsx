@@ -1,11 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import { BLOGS_ROUTE, HOME_ROUTE } from "./components/Constans/Routes";
+import { BLOGS_ROUTE, HOME_ROUTE,PROFILE_ROUTER } from "./components/Constans/Routes";
 import Header from "./components/Header";
 
 import Homes from "./pages/home";
 import Blogs from "./pages/Blogs";
+import Profile from './pages/Profile'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           }
         />
         <Route path={BLOGS_ROUTE} element={<Blogs />} />
+        <Route path={PROFILE_ROUTER} element={<Profile/>} />
       </Routes>
     </BrowserRouter>
   );

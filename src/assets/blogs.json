@@ -1,43 +1,20 @@
 [
+
   {
-    "id": 0,
-    "title": "rare new",
-    "image": "https://data.1freewallpapers.com/download/kratos-fighting-in-god-of-war-3-1600x1200.jpg",
+    "id": 1,
+    "title": "BootCamps es la mejor ruta?",
+    "image": "https://www.formarse.es/wp-content/uploads/2021/11/bootcamps.jpeg",
+    "type": "experiencia",
+    "description":"Bootcamps ventajas y desde el puto de vista de alguien que esta tomando uno, como funcionan y por que es una opcion tan valida como cualquier otra que hay en el mercado ",
     "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
     "lastpost": true
   },
-  {
-    "id": 1,
-    "title": "post title 1",
-    "image": "./img/6-PASOS-CREAR-HABITOS.png",
-    "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
-    "lastpost": false
-  },
-  {
+    {
     "id": 2,
-    "title": "post title 2",
-    "image": "./img/goodofwar.jpg",
-    "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
-    "lastpost": false
-  },
-  {
-    "id": 3,
     "title": "post title 3",
-    "image": "./img/goodofwar.jpg",
-    "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
-    "lastpost": false
-  },
-  {
-    "id": 4,
-    "title": "post title 4",
-    "image": "./img/goodofwar.jpg",
-    "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
-    "lastpost": false
-  },
-  {
-    "id": 5,
-    "title": "post title 5",
-    "image": "./img/goodofwar.jpg",
+    "image": "https://midu.dev//images/react-hooks-use-state.png",
+    "type": "experiencia",
+    "description":"perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime ",
     "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque consequuntur quos sit quibusdam fugit modi omnis accusamus enim sint maxime perferendis quidem, molestias distinctio mollitia adipisci hic, expedita harum natus!",
     "lastpost": false
   }
