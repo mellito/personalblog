@@ -34,7 +34,7 @@ const ContactForm = () => {
         </section>
         <textarea name="Message" id=""  className='kosalsay'  placeholder='Message' onChange={handleChange} />
         <button className='kosalsay'type="submit">Contactar</button>
-        <p className='kosalsay' style={{display:error&& 'block'}} >Todos los campos son requeridos</p>
+        <p className='kosalsay' style={{display:error&& 'block'}} >All the field are require</p>
     </form>
   )
 }

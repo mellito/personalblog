@@ -16,7 +16,7 @@ function App() {
         <Route
           path={HOME_ROUTE}
           element={
-            <Homes greeting="know all about web technologies, study methods and more, let" />
+            <Homes greeting="know all about web technologies, study methods and more, lets" />
           }
         />
         <Route path={BLOGS_ROUTE} element={<Blogs />} />
