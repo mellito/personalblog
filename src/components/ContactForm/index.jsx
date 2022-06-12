@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react'
+import emailjs from 'emailjs-com'
 import './ContactForm.scss'
 
 const ContactForm = () => {
@@ -17,10 +18,13 @@ const ContactForm = () => {
 
     const onHandleSubmit = (event)=>{
          event.preventDefault();
-          console.log(form);
         if(!form.Nombre || !form.Correo || !form.Message )
        {
         return setError(true);
+       }
+       else{
+           emailjs.sendForm('service_jnrk4lg','template_fi0ulv7',event.target,'G7yYsmzD618XE2BV3').then(res=>{console.log(res)}).catch(err=> console.log(err))
+           document.querySelector(".form-container").reset();
        }
        
     }

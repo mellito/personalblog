@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./PostContainer.scss";
 const PostContainer = (props) => {
-  const { data } = props;
+  const { data, buttonTitle, link } = props;
   return (
     <article className="post-contaner pixel-borders--2">
       <img
@@ -12,9 +12,9 @@ const PostContainer = (props) => {
       />
 
       <p>{data.title}</p>
-      <p className="kosalsay">{data.content.slice(0, 80)} ...</p>
-      <Link to={"/"} className=" pixel-box--primary kosalsay">
-        Read more
+      <p className="kosalsay">{data.description}</p>
+      <Link to={link} className=" pixel-box--primary kosalsay">
+        {buttonTitle}
       </Link>
     </article>
   );

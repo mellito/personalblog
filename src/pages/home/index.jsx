@@ -34,8 +34,8 @@ function Home({ greeting }) {
         <div className="welcome-info__title">
           {splitGretting.map((value, index) => (
             <Fragment key={index}>
-              {value === " " && <i>{value}</i>}
               <span>{value}</span>
+              {value === " " && <i></i>}
             </Fragment>
           ))}
         </div>

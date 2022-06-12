@@ -1,54 +1,11 @@
-.blogs-main {
-  display: grid;
-}
-
-.blogs-news-container {
-  background-color: #e6e9ed;
-  padding: 20px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 450px;
-  gap: 20px;
-}
-
-.blogs-news-img-container {
-  place-self: center;
-  max-width: 600px;
-}
-
-.blogs-news-img-container img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
 .blogs-news-info-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  font-weight: bolder;
 }
 
 .blogs-news-info-container h2 {
   text-transform: uppercase;
-}
-
-.blogs-main a {
-  padding: 10px;
-  text-transform: capitalize;
-}
-
-.blogs-post-container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px 0;
-  > h2 {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-  }
 }
