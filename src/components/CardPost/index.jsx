@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./PostContainer.scss";
-const CardPost = (props) => {
-  const { data, buttonTitle, link } = props;
+const CardPost = ({ data, buttonTitle, link }) => {
   return (
     <article className="post-contaner pixel-borders--2">
       <img

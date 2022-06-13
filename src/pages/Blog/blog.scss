@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  place-content: center;
+  background-color: #e6e9ed;
+  padding: 20px 0;
+
+  & .container__informaiton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+
+    & img {
+      max-width: 60%;
+      height: 50%;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    & p {
+      font-weight: bolder;
+      font-size: 18px;
+      text-align: justify;
+    }
+    & h2 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+}

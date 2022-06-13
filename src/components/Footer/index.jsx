@@ -10,8 +10,6 @@ const Footer = () => {
   useEffect(() => {
     setQuote(randomQ[Math.floor(Math.random() * randomQ.length)]);
   }, [randomQ]);
-
-  console.log(quote);
   return (
     <footer>
       <div className="container-footer">
