@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { getQuotes } from "../../service/quotes";
 const initialState = {
   quotes: [],
 };
@@ -7,9 +7,16 @@ const initialState = {
 const quoteSlice = createSlice({
   name: "quote",
   initialState,
-  reducers: {
-    addQuote: (state, action) => {
-      state.quotes.push(...action.payload);
+  reducers: {},
+  extraReducers: {
+    [getQuotes.pending]: (state) => {
+      state.quotes = [];
+    },
+    [getQuotes.fulfilled]: (state, action) => {
+      state.quotes = action.payload.data;
+    },
+    [getQuotes.rejected]: (state) => {
+      state.quotes = [];
     },
   },
 });

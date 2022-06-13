@@ -22,19 +22,18 @@ const Profile = () => {
               team lead, I improved my team management and people skills."
       />
 
-      <PostContainer title={"projects"}>
+      <PostContainer title="projects">
         {projectData.map((data) => {
           return (
             <CardPost
               key={data.id}
               data={data}
-              buttonTitle={"Read more"}
+              buttonTitle={"Go to the project"}
               link={`/blogs/${data.id}`}
             />
           );
         })}
       </PostContainer>
-
       <Footer />
     </div>
   );
