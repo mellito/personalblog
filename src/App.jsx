@@ -1,17 +1,30 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import { useEffect } from "react";
+import { getQuotes } from "./service/quotes";
+import { addBlogs } from "./feature/blogs/blogsSlice";
+import quoteData from "../src/assets/quoutes.json";
+import blogsData from "../src/assets/blogs.json";
 import {
   BLOGS_ROUTE,
   HOME_ROUTE,
   PROFILE_ROUTER,
+  BLOG_ROUTE,
 } from "./components/Constans/Routes";
 
 import Homes from "./pages/home";
 import Blogs from "./pages/Blogs";
 import Profile from "./pages/Profile";
+import Blog from "./pages/Blog";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(addBlogs(blogsData));
+    dispatch(getQuotes());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -23,6 +36,7 @@ function App() {
         />
         <Route path={BLOGS_ROUTE} element={<Blogs />} />
         <Route path={PROFILE_ROUTER} element={<Profile />} />
+        <Route path={BLOG_ROUTE} element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

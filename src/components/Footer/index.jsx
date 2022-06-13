@@ -1,8 +1,15 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import ContactForm from "../ContactForm";
 import wsplogo from "../../assets/img/7559928_whatsapp_pixel_social_logo_chat_icon.png";
 import "./Footer.scss";
-const Footer = (props) => {
+import { useSelector } from "react-redux";
+
+const Footer = () => {
+  const randomQ = useSelector((state) => state.quote.quotes);
+  const [quote, setQuote] = useState("");
+  useEffect(() => {
+    setQuote(randomQ[Math.floor(Math.random() * randomQ.length)]);
+  }, [randomQ]);
   return (
     <footer>
       <div className="container-footer">
@@ -17,8 +24,8 @@ const Footer = (props) => {
           </a>
         </div>
         <div className="footer-bottom">
-          {props.quote ? (
-            <p className="kosalsay">"{props.quote.quote}"</p>
+          {quote ? (
+            <p className="kosalsay">{quote.quote}</p>
           ) : (
             <p className="kosalsay">"Loading..."</p>
           )}
