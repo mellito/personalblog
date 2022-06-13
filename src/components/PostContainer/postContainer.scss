@@ -1,0 +1,15 @@
+.blogs-post-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+  }
+}

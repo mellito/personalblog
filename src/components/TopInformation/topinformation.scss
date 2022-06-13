@@ -1,0 +1,31 @@
+.top-information {
+  background-color: #e6e9ed;
+  padding: 20px 0;
+  > article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    > img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      place-self: center;
+    }
+    > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      > p {
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      > h2 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./PostContainer.scss";
-const PostContainer = (props) => {
+const CardPost = (props) => {
   const { data, buttonTitle, link } = props;
   return (
     <article className="post-contaner pixel-borders--2">
@@ -12,7 +12,7 @@ const PostContainer = (props) => {
       />
 
       <p>{data.title}</p>
-      <p className="kosalsay">{data.description}</p>
+      <p className="kosalsay">{data.description.slice(0, 80)}...</p>
       <Link to={link} className=" pixel-box--primary kosalsay">
         {buttonTitle}
       </Link>
@@ -20,4 +20,4 @@ const PostContainer = (props) => {
   );
 };
 
-export default PostContainer;
+export default CardPost;

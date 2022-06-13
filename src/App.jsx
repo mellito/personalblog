@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import { useEffect } from "react";
+import { addQuote } from "../src/feature/quote/quoteSlice";
+import quoteData from "../src/assets/quoutes.json";
 import {
   BLOGS_ROUTE,
   HOME_ROUTE,
@@ -10,8 +12,14 @@ import {
 import Homes from "./pages/home";
 import Blogs from "./pages/Blogs";
 import Profile from "./pages/Profile";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(addQuote(quoteData));
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Routes>
