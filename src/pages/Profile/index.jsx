@@ -28,7 +28,8 @@ const Profile = () => {
             <CardPost
               key={data.id}
               data={data}
-              buttonTitle={"Go to the project"}
+              buttonTitle={" website"}
+              github={data.github}
               link={`/blogs/${data.id}`}
             />
           );

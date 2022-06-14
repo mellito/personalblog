@@ -1,6 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 const API_URL = process.env.REACT_APP_BASE_URL;
-console.log(API_URL);
 
 export const getQuotes = createAsyncThunk("quote/getQuotes", async () => {
   try {
