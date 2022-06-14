@@ -5,6 +5,7 @@ import "./ContactForm.scss";
 const ContactForm = () => {
   const [form, setForm] = useState({});
   const [error, setError] = useState(false);
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     setError(false);
@@ -18,6 +19,7 @@ const ContactForm = () => {
   const onHandleSubmit = (event) => {
     event.preventDefault();
     if (!form.Nombre || !form.Correo || !form.Message) {
+      setMessage(" All the field are required");
       return setError(true);
     } else {
       emailjs
@@ -32,10 +34,17 @@ const ContactForm = () => {
         })
         .catch((err) => console.log(err));
       document.querySelector(".form-container").reset();
+      setMessage("Message sent");
+      setError(true);
+      const timer = setTimeout(() => {
+        setError(false);
+        setMessage("");
+      }, 2000);
+      return () => clearTimeout(timer);
     }
   };
   return (
-    <form action="" className="form-container" onSubmit={onHandleSubmit}>
+    <form action="" className="form-container " onSubmit={onHandleSubmit}>
       <h2 className="">contact me</h2>
       <section>
         <input
@@ -64,7 +73,7 @@ const ContactForm = () => {
         Send
       </button>
       <p className="kosalsay" style={{ display: error && "block" }}>
-        All the field are require
+        {message}
       </p>
     </form>
   );

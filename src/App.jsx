@@ -2,8 +2,8 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { getQuotes } from "./service/quotes";
+import { getProjects } from "./service/projects";
 import { addBlogs } from "./feature/blogs/blogsSlice";
-import quoteData from "../src/assets/quoutes.json";
 import blogsData from "../src/assets/blogs.json";
 import {
   BLOGS_ROUTE,
@@ -23,6 +23,7 @@ function App() {
   useEffect(() => {
     dispatch(addBlogs(blogsData));
     dispatch(getQuotes());
+    dispatch(getProjects());
   }, [dispatch]);
 
   return (

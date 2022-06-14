@@ -1,11 +1,11 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import projectData from "../../assets/project.json";
 import CardPost from "../../components/CardPost";
 import PostContainer from "../../components/PostContainer";
 import TopInformation from "../../components/TopInformation";
-
+import { useSelector } from "react-redux";
 const Profile = () => {
+  const { projects } = useSelector((state) => state.project);
   return (
     <div className="profile-container">
       <Header />
@@ -23,16 +23,18 @@ const Profile = () => {
       />
 
       <PostContainer title="projects">
-        {projectData.map((data) => {
-          return (
-            <CardPost
-              key={data.id}
-              data={data}
-              buttonTitle={"Go to the project"}
-              link={`/blogs/${data.id}`}
-            />
-          );
-        })}
+        {projects.length > 0 &&
+          projects.map((data) => {
+            return (
+              <CardPost
+                key={data._id}
+                data={data}
+                buttonTitle={"website"}
+                type="projects"
+                extralink={data.extralink}
+              />
+            );
+          })}
       </PostContainer>
       <Footer />
     </div>

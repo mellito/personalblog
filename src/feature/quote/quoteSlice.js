@@ -21,5 +21,5 @@ const quoteSlice = createSlice({
   },
 });
 
-export const { addQuote } = quoteSlice.actions;
+export const {} = quoteSlice.actions;
 export default quoteSlice.reducer;
