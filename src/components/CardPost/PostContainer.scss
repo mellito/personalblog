@@ -28,10 +28,10 @@
     object-fit: fill;
   }
   .post-contaner__button {
-    height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     a {
       margin-bottom: 10px;
       padding: 10px;
