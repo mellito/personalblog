@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 const API_URL = process.env.REACT_APP_BASE_URL;
 
-export const getQuotes = createAsyncThunk("quote/getQuotes", async () => {
+export const getProjects = createAsyncThunk("project/getProjects", async () => {
   try {
     const payload = {
       method: "GET",
@@ -9,7 +9,7 @@ export const getQuotes = createAsyncThunk("quote/getQuotes", async () => {
         "Content-Type": "application/json",
       },
     };
-    const response = await fetch(`${API_URL}/quotes`, payload);
+    const response = await fetch(`${API_URL}/projects`, payload);
     const data = await response.json();
     return data;
   } catch (error) {
