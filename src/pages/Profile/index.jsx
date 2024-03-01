@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Pacman from "../../components/Pacman";
 import CardPost from "../../components/CardPost";
 import PostContainer from "../../components/PostContainer";
 import TopInformation from "../../components/TopInformation";
@@ -21,10 +22,11 @@ const Profile = () => {
               customer service skills and to work under pressure as well. As a
               team lead, I improved my team management and people skills."
       />
-
-      <PostContainer title="projects">
-        {projects.length > 0 &&
-          projects.map((data) => {
+      {projects.length === 0 ? (
+        <Pacman />
+      ) : (
+        <PostContainer title="projects">
+          {projects.map((data) => {
             return (
               <CardPost
                 key={data._id}
@@ -35,7 +37,9 @@ const Profile = () => {
               />
             );
           })}
-      </PostContainer>
+        </PostContainer>
+      )}
+
       <Footer />
     </div>
   );

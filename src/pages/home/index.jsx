@@ -2,7 +2,7 @@ import React, { useEffect, Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./home.scss";
 import PropTypes from "prop-types";
-import { BLOGS_ROUTE } from "../../components/Constans/Routes";
+import { PROFILE_ROUTER } from "../../components/Constans/Routes";
 
 function Home({ greeting }) {
   const splitGretting = greeting.split("");
@@ -39,7 +39,7 @@ function Home({ greeting }) {
             </Fragment>
           ))}
         </div>
-        <Link to={BLOGS_ROUTE}>START</Link>
+        <Link to={PROFILE_ROUTER}>START</Link>
       </section>
     </main>
   );
