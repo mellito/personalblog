@@ -4,9 +4,19 @@ import Pacman from "../../components/Pacman";
 import CardPost from "../../components/CardPost";
 import PostContainer from "../../components/PostContainer";
 import TopInformation from "../../components/TopInformation";
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getQuotes } from "./service/quotes";
+import { getProjects } from "./service/projects";
+import { useSelector, useDispatch } from "react-redux";
 const Profile = () => {
   const { projects } = useSelector((state) => state.project);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getQuotes());
+    dispatch(getProjects());
+  }, []);
+
   return (
     <div className="profile-container">
       <Header />
